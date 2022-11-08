@@ -1,7 +1,6 @@
-import React from "react";
-import "../styles/globals.css";
+import type { NextPage } from "next";
 
-const Page = () => {
+const Page: NextPage = () => {
   return <div>Page</div>;
 };
 
