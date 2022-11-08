@@ -1,4 +1,7 @@
+import { Rubik } from "@next/font/google";
 import "../styles/globals.css";
+
+const rubik = Rubik();
 
 type Props = {
   children: React.ReactNode;
@@ -6,7 +9,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <html>
+    <html className={rubik.className}>
       <head></head>
       <body>{children}</body>
     </html>
