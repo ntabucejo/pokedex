@@ -10,7 +10,6 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <html className={rubik.className}>
-      <head></head>
       <body>{children}</body>
     </html>
   );
