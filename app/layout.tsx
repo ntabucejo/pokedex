@@ -9,8 +9,14 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <html className={rubik.className} lang="en">
-      <body>{children}</body>
+    <html
+      className={`${rubik.className} bg-slate-100 text-slate-800`}
+      lang="en">
+      <body>
+        <main>
+          <div>{children}</div>
+        </main>
+      </body>
     </html>
   );
 };
