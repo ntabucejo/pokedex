@@ -6,7 +6,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    notebook: "480px",
+    tablet: "640px",
+    laptop: "1024px",
+    desktop: "1280px",
+    television: "1800px",
+    extend: {
+      opacity: {
+        fade: ".60",
+      },
+    },
   },
   plugins: [],
 };
