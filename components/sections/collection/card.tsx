@@ -23,7 +23,7 @@ const getPokemon = async (url: string): Promise<Pokemon> => {
     const { id, name, types } = await axios
       .get(url)
       .then((response) => response.data);
-    const POKEMON_IMAGE_URL = process.env.POKEMON_IMAGE_URL!;
+    const POKEMON_IMAGE_URL ="https://www.professorlotus.com/Sprites"
     const imageUrl = `${POKEMON_IMAGE_URL}/${name[0].toUpperCase()}${name.slice(
       1
     )}`;

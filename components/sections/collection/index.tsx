@@ -9,7 +9,7 @@ type Pokemon = {
 
 const getPokedex = async (offset: number) => {
   try {
-    const POKEMON_API_URL = process.env.POKEMON_API_URL!;
+    const POKEMON_API_URL = "https://pokeapi.co/api/v2/"
     const key = `${POKEMON_API_URL}/pokemon?limit=40&offset=${offset * 10}`;
     const { results } = await axios.get(key).then((response) => response.data);
     return results as Pokemon[];
