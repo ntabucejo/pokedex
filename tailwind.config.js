@@ -6,24 +6,28 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    notebook: "480px",
-    tablet: "640px",
-    laptop: "1024px",
-    desktop: "1280px",
-    television: "1800px",
+    screens: {
+      notebook: "480px",
+      tablet: "640px",
+      laptop: "1024px",
+      desktop: "1280px",
+    },
     extend: {
+      borderRadius: {
+        primary: "1rem",
+      },
       opacity: {
         fade: ".60",
       },
       colors: {
         type: {
-          normal: "#4BD2C1",
+          normal: "#929BA3",
           fire: "#FF983F",
           water: "#3393DD",
           grass: "#35C04A",
           flying: "#8AACE4",
           fighting: "#E12C6A",
-          poison: "#4BD2C1",
+          poison: "#B667CF",
           electric: "#FBD200",
           ground: "#E97333",
           rock: "#C9B787",
