@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
+import Collection from "../components/sections/collection";
 
 const Page: NextPage = () => {
-  return <div>Page</div>;
+  return (
+    <>
+      <Collection />
+    </>
+  );
 };
 
 export default Page;

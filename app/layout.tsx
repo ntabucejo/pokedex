@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
       lang="en">
       <body>
         <main>
-          <div>{children}</div>
+          <div className="mx-auto max-w-screen-desktop p-4">{children}</div>
         </main>
       </body>
     </html>
